@@ -1,0 +1,67 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.background {
+    background: url('image.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    position: relative;
+}
+
+h1 {
+    color: white;
+    font-size: 80px; /* Tamanho fixo do texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    animation: glow 2s infinite alternate;
+    position: absolute; /* Permite ajustar livremente */
+    top: 60%; /* Ajusta o texto mais para cima, em 60% da altura da tela */
+    transform: translateY(-50%);
+}
+
+a.link-nome {
+    color: white; /* Deixa o texto branco */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: all 0.6s ease-in-out; /* Suaviza o efeito */
+    animation: glow-hover 2s infinite alternate; /* Mantém brilho contínuo */
+}
+
+/* Efeito ao passar o mouse sobre o nome */
+a.link-nome:hover {
+    transform: scale(1.3); /* Cresce suavemente ao passar o mouse */
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+/* Efeito de brilho animado */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.8),
+                     0 0 10px rgba(255, 255, 255, 0.6),
+                     0 0 20px rgba(255, 255, 255, 0.4);
+    }
+    100% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 1),
+                     0 0 20px rgba(255, 255, 255, 0.8),
+                     0 0 30px rgba(255, 255, 255, 0.6);
+    }
+}
+
+/* Animação de brilho constante */
+@keyframes glow-hover {
+    0% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.9),
+                     0 0 20px rgba(255, 255, 255, 0.8),
+                     0 0 30px rgba(255, 255, 255, 0.6);
+    }
+    100% {
+        text-shadow: 0 0 15px rgba(255, 255, 255, 1),
+                     0 0 25px rgba(255, 255, 255, 0.9),
+                     0 0 35px rgba(255, 255, 255, 0.8);
+    }
+}

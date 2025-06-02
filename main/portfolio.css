@@ -1,0 +1,252 @@
+/* Configuração geral */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212; /* Fundo escuro */
+    color: white; /* Texto branco */
+    padding-top: 50px; /* Espaço para a navbar fixa */
+}
+
+/* Navbar fixa */
+.navbar {
+    position: fixed;
+    top: 0; /* Posição inicial visível */
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo translúcido */
+    padding: 10px 0;
+    z-index: 1000; /* Garante que fique acima dos elementos */
+    transition: top 0.3s ease; /* Transição suave para esconder/reaparecer */
+}
+
+.navbar ul {
+    list-style: none; /* Remove marcadores */
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centraliza os links */
+}
+
+.navbar ul li {
+    display: inline; /* Links alinhados em linha */
+    margin: 0 15px; /* Espaçamento entre links */
+}
+
+.navbar ul li a {
+    color: white; /* Mantém branco */
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: bold;
+    transition: text-shadow 0.3s ease, transform 0.3s ease; /* Suavidade no efeito */
+}
+
+.navbar ul li a:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Adiciona brilho suave */
+}
+
+/* Cabeçalho do portfólio */
+.portfolio-header {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+/* Foto de perfil */
+.foto-perfil {
+    width: 180px; /* Ajusta o tamanho da imagem */
+    height: 180px;
+    border-radius: 50%; /* Imagem circular */
+    margin-bottom: 15px;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.foto-perfil:hover {
+    transform: scale(1.2); /* Aumenta o tamanho ao passar o mouse */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Adiciona brilho */
+}
+
+/* Seções */
+.sobre, .educacao, .tecnologias, .projetos {
+    margin: 20px;
+    padding: 15px;
+    border-radius: 8px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Títulos das seções */
+.sobre h2, .educacao h2, .tecnologias h2, .projetos h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* Parágrafos e textos das seções */
+.sobre p, .educacao p, .tecnologias p, .projetos p {
+    font-size: 1rem;
+    color: white; /* Texto branco uniforme */
+    line-height: 1.6; /* Altura das linhas para melhor leitura */
+}
+
+/* Estilo da seção Educação */
+.educacao h3 {
+    font-size: 1.8rem; /* Destaque para subtítulos */
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.9); /* Branco translúcido */
+}
+
+.educacao ul {
+    list-style-type: disc; /* Lista com marcadores */
+    padding-left: 20px; /* Recuo para os marcadores */
+    margin-top: 10px;
+}
+
+.educacao ul li {
+    margin-bottom: 10px; /* Espaço entre os itens da lista */
+}
+
+/* Lista de projetos */
+.projetos ul {
+    list-style: none; /* Remove marcadores */
+    padding: 0;
+}
+
+.projetos ul li {
+    margin: 10px 0;
+}
+
+.projetos ul li a {
+    color: white; /* Mantém branca */
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: bold;
+    transition: text-shadow 0.3s ease, transform 0.3s ease; /* Suavidade no hover */
+}
+
+.projetos ul li a:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Adiciona brilho suave */
+}
+
+/* Tecnologias */
+.tecnologias {
+    text-align: center;
+    margin: 20px;
+    padding: 15px;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite quebra de linha */
+    gap: 20px; /* Espaçamento entre os ícones */
+}
+
+.tech-icon {
+    width: 80px; /* Ajusta o tamanho das imagens */
+    height: 80px; /* Dimensões das imagens */
+    margin-bottom: 10px; /* Espaçamento entre a imagem e o texto */
+    transition: transform 0.3s ease; /* Transição suave no hover */
+}
+
+.icon:hover .tech-icon {
+    transform: scale(1.2); /* Aumenta a imagem no hover */
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto translúcido */
+    color: rgba(255, 255, 255, 0.6); /* Texto branco suave */
+}
+
+/* Título da Profissão */
+.titulo-profissao {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white; /* Branco sólido */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.3); /* Leve brilho */
+    display: block;
+    margin-top: 10px;
+}
+
+/* Estilo da seção Educação */
+.educacao ul {
+    list-style: none; /* Remove todos os marcadores da lista */
+    padding-left: 0; /* Remove recuo */
+    margin: 0; /* Remove margens adicionais */
+}
+
+.educacao ul li {
+    margin-bottom: 10px; /* Espaçamento entre os itens */
+    color: white; /* Texto uniforme */
+    font-size: 1rem; /* Tamanho legível */
+}
+
+.navbar {
+    position: fixed;
+    top: 0; /* Começa visível */
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    transition: top 0.3s ease-in-out; /* Suavidade no restante da página */
+}
+
+
+
+
+/* Seção Idiomas - Ajuste de formatação */
+.idiomas {
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+    background-color: transparent; /* Mantém o fundo uniforme */
+}
+
+/* Título da seção Idiomas */
+.idiomas h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* Texto dentro da seção Idiomas */
+.idiomas p {
+    font-size: 1rem;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Removendo marcadores de listas */
+.idiomas ul {
+    list-style: none; /* Remove os marcadores */
+    padding: 0; /* Remove recuo */
+    margin: 0; /* Remove margens extras */
+}
+
+/* Ajuste nos itens da lista */
+.idiomas ul li {
+    margin-bottom: 10px; /* Espaçamento entre itens */
+    color: white;
+    font-size: 1rem;
+}
+
+#video-fundo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1; /* Coloca o vídeo atrás dos outros elementos */
+}
+
+/* Ícones lado a lado na seção Projetos */
+.icon-container {
+    display: flex;
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    align-items: center; /* Garante alinhamento vertical */
+    gap: 15px; /* Espaçamento entre os ícones */
+    flex-direction: row; /* Garante alinhamento na horizontal */
+}
+
+.icon {
+    display: inline-block; /* Mantém os ícones em linha */
+}
